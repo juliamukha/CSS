@@ -275,7 +275,7 @@ body {
     display: flex;
     height: 100%;
     align-items: center;
-    background: url(images/main_img.png) transparent no-repeat;
+    background: url(../images/main_img.png) transparent no-repeat;
     background-size: contain;
 }
 
@@ -336,19 +336,19 @@ body {
 }
 
 .categories-small-item:first-child {
-    background: url(images/category_women.png) transparent no-repeat;
+    background: url(../images/category_women.png) transparent no-repeat;
 }
 
 .categories-small-item:nth-child(2) {
-    background: url(images/category_men.png) transparent no-repeat;
+    background: url(../images/category_men.png) transparent no-repeat;
 }
 
 .categories-small-item:nth-child(3) {
-    background: url(images/category_kids.png) transparent no-repeat;
+    background: url(../images/category_kids.png) transparent no-repeat;
 }
 
 .categories-big-item {
-    background: url(images/category_accesories.png) transparent no-repeat;
+    background: url(../images/category_accesories.png) transparent no-repeat;
     min-height: 180px;
     width: 100%;
 }
@@ -416,6 +416,10 @@ body {
 .item-card {
     width: calc(33.3333333% - 20px);
     margin-bottom: 30px;
+}
+
+.item-card-article {
+    background-color: #f8f8f8;
 }
 
 .item-card-img-wrp {
@@ -508,13 +512,12 @@ body {
 
 .item-btn {
     border: 1px solid #ff6a6a;
-    height: 47px;
+    min-height: 47px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-size: 16px;
-    line-height: 19px;
     padding: 0 39px;
     background-color: #f16d7f;
     margin: 0 auto;
@@ -575,7 +578,7 @@ body {
 
 /*====   Footer style start   ====*/
 .footer-subscribe {
-    background: url(images/footer_bg.jpg) 50% 50% no-repeat transparent;
+    background: url(../images/footer_bg.jpg) center center no-repeat transparent;
     background-size: cover;
     height: 448px;
 }
@@ -640,6 +643,7 @@ body {
 
 .footer-subscribe-form {
     display: flex;
+    align-items: stretch;
 }
 
 .footer-subscribe-email {
@@ -648,9 +652,8 @@ body {
     background-color: #e1e1e1;
     color: #222224;
     font-size: 14px;
-    line-height: 17px;
-    height: 49px;
-    width: 256px;
+    min-height: 49px;
+    min-width: 256px;
     border: none;
     padding: 0 22px;
     display: flex;
@@ -668,8 +671,7 @@ body {
     background-color: #e05c6e;
     color: #fff;
     font-size: 14px;
-    line-height: 17px;
-    height: 49px;
+    min-height: 49px;
     border: none;
     padding: 0 22px;
     display: flex;
