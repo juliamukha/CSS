@@ -738,6 +738,10 @@ a:focus-visible {
     margin-right: 28px;
 }
 
+.filter-feature {
+    display: flex;
+}
+
 #switch-filter-category,
 .filter-feature-switch-input {
     display: none;
@@ -1057,6 +1061,19 @@ a:focus-visible {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 27px;
+    position: relative;
+}
+
+.product-description-collection-title::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 64px;
+    background-color: #ef5b70;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .product-description-title {
@@ -1095,8 +1112,8 @@ a:focus-visible {
     margin-bottom: 32px;
 }
 
-.product-filters .filter-feature {
-    margin: 0 23px;
+.margin-side {
+    margin: 0 46px;
 }
 
 .add-to-card {
@@ -1397,6 +1414,56 @@ a:focus-visible {
     margin-bottom: 33px;
 }
 
+.radio-holder {
+    display: flex;
+    align-items: center;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 11px;
+    color: #000;
+    margin-right: 20px;
+}
+
+.radio-input {
+    display: none;
+}
+
+.radio-label::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid #a4a4a4;
+}
+
+.radio-check {
+    display: none;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+}
+
+.radio-input:checked~.radio-check {
+    display: block;
+    background-color: #f16d7f;
+}
+
+.radio-txt {
+    padding-left: 22px;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
 .registration-form-legend {
     color: #222;
     font-size: 16px;
@@ -1409,6 +1476,53 @@ a:focus-visible {
     line-height: 16px;
     color: #b1b1b1;
     margin-bottom: 39px;
+}
+
+.registration-form-btn-submit {
+    background-color: #f16d7f;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #f16d7f;
+    font-size: 14px;
+    padding: 16px 29px;
+    white-space: pre-wrap;
+}
+
+.registration-form-btn-submit:hover {
+    color: #f16d7f;
+    background-color: #fff;
+}
+
+.registration-form-btn-submit:active {
+    color: #fff;
+    background-color: #f16d7f;
+}
+
+.registration-form-btn-submit .fa-solid {
+    padding-left: 20px;
+}
+
+.regestration-benefit-title,
+.regestration-benefit-txt {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 22px;
+    color: #000;
+}
+
+.regestration-benefit-title {
+    text-transform: uppercase;
+}
+
+.regestration-benefit-item-txt {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    color: #000;
+}
+
+.regestration-benefit-item-txt .fa-solid {
+    padding-right: 23px;
 }
 
 /*====    Registration style end    ====*/
@@ -1587,6 +1701,11 @@ a:focus-visible {
         padding-right: 32px;
     }
 
+
+    .main-banner-container {
+        background-position-x: 15%;
+    }
+
     .main-banner {
         height: 368px;
         margin-bottom: 20px;
@@ -1595,6 +1714,8 @@ a:focus-visible {
     .main-banner-title {
         font-size: 44px;
         line-height: 53px;
+        margin-left: auto;
+        background-color: #f1e4e6;
     }
 
     .main-banner-subtitle {
