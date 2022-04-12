@@ -13,7 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -176,54 +176,57 @@
                     </div>
 
                     <div class="product-filters">
-                        <form class="product-filters-features filter-feature">
-                            <input type="checkbox" id="switch-color" class="filter-feature-switch-input">
-                            <label class="product-filters-features-btn filter-feature-switch-btn" for="switch-colors">
-                                <span>choose color</span>
-                                <span class="fa-solid fa-angle-down"></span>
-                            </label>
-                        </form>
-                        <form class="item-filters-size filter-feature">
-                            <input type="checkbox" id="switch-size" class="filter-feature-switch-input">
-                            <label class="item-filters-size-btn filter-feature-switch-btn" for="switch-size">
-                                <span>size</span>
-                                <span class="fa-solid fa-angle-down"></span>
-                            </label>
-
-                            <div class="item-filters-size-list-wrp filter-feature-list-wrp">
-                                <label class="item-filters-size-list-item-title filter-feature-list-label">
-                                    <input class="item-filters-size-list-item filter-feature-list-check"
-                                        id="select-xsmall" type="checkbox" value="xsmall" name="selectName">
-                                    <span class="fa-solid fa-check"></span>
-                                    <span>xs</span>
-                                </label>
-                                <label class="item-filters-size-list-item-title filter-feature-list-label">
-                                    <input class="item-filters-size-list-item filter-feature-list-check"
-                                        id="select-small" type="checkbox" value="small" name="selectName">
-                                    <span class="fa-solid fa-check"></span>
-                                    <span>s</span>
-                                </label>
-                                <label class="item-filters-size-list-item-title filter-feature-list-label">
-                                    <input class="item-filters-size-list-item filter-feature-list-check"
-                                        id="select-medium" type="checkbox" value="medium" name="selectName">
-                                    <span class="fa-solid fa-check"></span>
-                                    <span>m</span>
-                                </label>
-                                <label class="item-filters-size-list-item-title filter-feature-list-label"
-                                    for="select-large">
-                                    <input class="item-filters-size-list-item filter-feature-list-check"
-                                        id="select-large" type="checkbox" value="large" name="selectName">
-                                    <span class="fa-solid fa-check"></span>
-                                    <span>l</span>
+                        <form class="filter-feature">
+                            <div class="product-filters-features">
+                                <input type="checkbox" id="switch-color" class="filter-feature-switch-input">
+                                <label class="product-filters-features-btn filter-feature-switch-btn"
+                                    for="switch-colors">
+                                    <span>choose color</span>
+                                    <span class="fa-solid fa-angle-down"></span>
                                 </label>
                             </div>
-                        </form>
-                        <form class="item-filters-price filter-feature">
-                            <input type="checkbox" id="switch-price" class="filter-feature-switch-input">
-                            <label class="item-filters-price-btn filter-feature-switch-btn" for="switch-price">
-                                <span>price</span>
-                                <span class="fa-solid fa-angle-down"></span>
-                            </label>
+                            <div class="item-filters-size margin-side">
+                                <input type="checkbox" id="switch-size" class="filter-feature-switch-input">
+                                <label class="item-filters-size-btn filter-feature-switch-btn" for="switch-size">
+                                    <span>choose size</span>
+                                    <span class="fa-solid fa-angle-down"></span>
+                                </label>
+
+                                <div class="item-filters-size-list-wrp filter-feature-list-wrp">
+                                    <label class="item-filters-size-list-item-title filter-feature-list-label">
+                                        <input class="item-filters-size-list-item filter-feature-list-check"
+                                            id="select-xsmall" type="checkbox" value="xsmall" name="selectName">
+                                        <span class="fa-solid fa-check"></span>
+                                        <span>xs</span>
+                                    </label>
+                                    <label class="item-filters-size-list-item-title filter-feature-list-label">
+                                        <input class="item-filters-size-list-item filter-feature-list-check"
+                                            id="select-small" type="checkbox" value="small" name="selectName">
+                                        <span class="fa-solid fa-check"></span>
+                                        <span>s</span>
+                                    </label>
+                                    <label class="item-filters-size-list-item-title filter-feature-list-label">
+                                        <input class="item-filters-size-list-item filter-feature-list-check"
+                                            id="select-medium" type="checkbox" value="medium" name="selectName">
+                                        <span class="fa-solid fa-check"></span>
+                                        <span>m</span>
+                                    </label>
+                                    <label class="item-filters-size-list-item-title filter-feature-list-label"
+                                        for="select-large">
+                                        <input class="item-filters-size-list-item filter-feature-list-check"
+                                            id="select-large" type="checkbox" value="large" name="selectName">
+                                        <span class="fa-solid fa-check"></span>
+                                        <span>l</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="product-filters-price">
+                                <input type="checkbox" id="switch-price" class="filter-feature-switch-input">
+                                <label class="product-filters-price-btn filter-feature-switch-btn" for="switch-price">
+                                    <span>quantity</span>
+                                    <span class="fa-solid fa-angle-down"></span>
+                                </label>
+                            </div>
                         </form>
                     </div>
                     <button class="add-to-card" type="button"><svg viewBox="0 0 27 25"
