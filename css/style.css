@@ -1830,11 +1830,11 @@ a:focus-visible {
         margin-bottom: 33px;
     }
 
-    .item-card:last-child {
+    .last-display-none-item {
         display: none;
     }
 
-    .item-card:first-child {
+    .change-order-item {
         order: 2;
     }
 
