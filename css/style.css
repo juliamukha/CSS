@@ -1,5 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
+    min-width: 320px;
 }
 
 .container {
@@ -678,6 +679,7 @@ a:focus-visible {
     font-size: 24px;
     line-height: 29px;
     text-transform: uppercase;
+    margin-right: 20px;
 }
 
 .breadcrumbs-list {
@@ -764,6 +766,7 @@ a:focus-visible {
     font-size: 14px;
     line-height: 16.8px;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .filter-feature-switch-btn .fa-solid {
@@ -957,7 +960,7 @@ a:focus-visible {
 
 .pagination-link {
     font-size: 16px;
-    padding: 5px 12px;
+    padding: 5px 10px;
     text-decoration: none;
     color: #c4c4c4;
 }
@@ -968,6 +971,19 @@ a:focus-visible {
 
 .pagination-link:active {
     color: #c4c4c4;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-padding-right {
+    padding-right: 0;
+}
+
+.no-padding-left {
+    padding-left: 0;
 }
 
 .pagination-link.fa-angle-left,
@@ -1168,11 +1184,13 @@ a:focus-visible {
 .cart {
     width: 60%;
     position: relative;
-    margin-right: 20px;
+    padding-right: 20px;
+    max-width: 675px;
 }
 
 .cart-form-wrp {
-    width: 30%;
+    width: 40%;
+    max-width: 360px;
 }
 
 .cart-list {
@@ -1190,8 +1208,7 @@ a:focus-visible {
 
 .cart-card-article {
     display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     position: relative;
 }
 
@@ -1261,7 +1278,8 @@ a:focus-visible {
     border-radius: 0;
     margin-left: 24px;
     height: 25px;
-    padding: 2px 5px;
+    padding: 2px 0 2px 2px;
+    max-width: 40px;
 }
 
 .cart-btn-wrp {
@@ -1278,6 +1296,7 @@ a:focus-visible {
     padding: 16px 40px;
     font-size: 14px;
     white-space: pre-wrap;
+    text-align: center;
 }
 
 .grey-btn:hover {
@@ -1337,7 +1356,6 @@ a:focus-visible {
     margin-bottom: 12px;
     color: #a4a4a4;
     text-align: right;
-    white-space: pre-wrap;
     text-transform: uppercase;
 }
 
@@ -1402,12 +1420,12 @@ a:focus-visible {
 }
 
 .registration-form {
-    width: 30%;
-    margin-right: 30px;
+    width: 35%;
 }
 
 .registration-benefit {
     width: 60%;
+    padding-left: 30px;
 }
 
 .registration-form-fieldset {
@@ -1519,6 +1537,7 @@ a:focus-visible {
     font-weight: 300;
     margin-bottom: 16px;
     color: #000;
+    display: flex;
 }
 
 .regestration-benefit-item-txt .fa-solid {
@@ -1694,6 +1713,49 @@ a:focus-visible {
 /*====    Footer style end    ====*/
 
 
+@media (max-width: 1030px) {
+    .cart-wrp {
+        flex-direction: column;
+    }
+
+    .cart,
+    .cart-form-wrp {
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .cart {
+        margin-bottom: 64px;
+    }
+
+    .cart-btn-wrp {
+        justify-content: center;
+    }
+
+    .cart-btn-clear {
+        margin-right: 24px;
+    }
+
+    .cart-btn-continue-shopping {
+        margin-left: 24px;
+    }
+
+    .cart-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .cart-form-input-wrp,
+    .cart-summary {
+        width: calc(50% - 8px);
+    }
+}
+
+
 
 @media (max-width: 768px) {
     .main-header-container {
@@ -1768,8 +1830,55 @@ a:focus-visible {
         margin-bottom: 33px;
     }
 
+    .item-card:last-child {
+        display: none;
+    }
+
+    .item-card:first-child {
+        order: 2;
+    }
+
     .items {
         margin-bottom: 65px;
+    }
+
+    .product-slider-img {
+        min-height: 624px;
+        background-size: contain;
+    }
+
+    .product-description-container {
+        padding: 0;
+        margin-bottom: 128px;
+    }
+
+    .product-description-wrp {
+        top: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .product-description-divider {
+        max-width: 46%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .margin-side {
+        margin: 0 18px;
+    }
+
+    .filter-feature-switch-btn .fa-solid {
+        padding-left: 0;
+    }
+
+    .product-description-wrp {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .product-description-title {
+        margin-bottom: 30px;
     }
 
     .features-container {
@@ -1789,6 +1898,18 @@ a:focus-visible {
 
     .features-item-title {
         margin-bottom: 16px;
+    }
+
+    .registration-form,
+    .registration-benefit {
+        width: calc(50% - 11px);
+        padding-left: 0;
+    }
+
+    .regestration-benefit-title,
+    .regestration-benefit-txt,
+    .regestration-benefit-item-txt {
+        font-size: 16px;
     }
 
     .footer-subscribe {
@@ -1812,6 +1933,91 @@ a:focus-visible {
         width: 100%;
         max-width: 360px;
         margin-bottom: 85px;
+    }
+
+    .footer-subscribe-email {
+        min-width: auto;
+    }
+}
+
+
+
+@media (max-width: 630px) {
+    .cart-card-img {
+        max-height: 188px;
+    }
+
+    .cart-card-txt-wrp {
+        padding: 15px;
+    }
+
+    .cart-card-close-btn {
+        top: 17px;
+        right: 12px;
+        font-size: 17px;
+    }
+
+    .cart-card-title {
+        font-size: 16px;
+        margin-bottom: 25px;
+        max-width: 145px;
+        padding-right: 15px;
+    }
+
+    .cart-card-txt {
+        margin-bottom: 4px;
+    }
+
+    .cart-card-txt,
+    .cart-card-quantity-label {
+        font-size: 14px;
+    }
+
+    .cart-card-quantity-input {
+        height: 16px;
+        font-size: 14px;
+    }
+
+    .grey-btn {
+        text-transform: none;
+        padding: 9px 18px;
+        font-size: 12px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .cart-btn-wrp {
+        justify-content: space-between;
+    }
+
+    .cart-list {
+        margin-bottom: 30px;
+    }
+
+    .cart {
+        margin-bottom: 48px;
+    }
+
+    .cart-form {
+        flex-direction: column;
+    }
+
+    .cart-form-input-wrp,
+    .cart-summary {
+        width: 100%;
+    }
+
+    .registration-wrp {
+        flex-direction: column;
+    }
+
+    .registration-form,
+    .registration-benefit {
+        width: 100%;
+    }
+
+    .registration-form {
+        margin-bottom: 40px;
     }
 }
 
@@ -1857,14 +2063,22 @@ a:focus-visible {
         justify-content: center;
     }
 
+    .item-filters-category-list-wrp {
+        min-width: 280px;
+    }
+
     .item-filters-category-btn span {
         display: none;
     }
 
     .item-filters-category-btn svg {
         margin: 0;
-        height: 25px;
+        height: 22px;
         width: auto;
+    }
+
+    .filter-feature-switch-btn {
+        font-size: 12px;
     }
 
     .item-filters-trending,
@@ -1901,6 +2115,10 @@ a:focus-visible {
 
     .items {
         margin-bottom: 96px;
+    }
+
+    .product-description-container {
+        margin-bottom: 64px;
     }
 
     .features-container {
